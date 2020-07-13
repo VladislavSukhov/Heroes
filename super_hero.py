@@ -1,7 +1,6 @@
 import requests
-from pprint import pprint
 
-# https://superheroapi.com/api/2619421814940190/search/Batman
+
 hulk_url = "https://superheroapi.com/api/2619421814940190/search/Hulk"
 captain_america_url = "https://superheroapi.com/api/2619421814940190/search/Captain_America"
 batman_url = "https://superheroapi.com/api/2619421814940190/search/Batman"
@@ -22,4 +21,4 @@ for url in urls:
 heroes.sort(key = lambda x: x[1])
 heroes.reverse()
 
-pprint(f'Самый умный герой {heroes[0][0]}.')
+print(f'Самый умный герой {heroes[0][0]}.')
